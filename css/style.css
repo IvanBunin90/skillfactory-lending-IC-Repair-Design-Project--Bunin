@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin     : 0;
     font-family: Nunito Sans, Arial;
 }
 
@@ -8,67 +8,124 @@ body * {
 }
 
 .wrapper {
-    margin: 0 auto;
+    margin   : 0 auto;
     max-width: 1250px;
 }
 
 .button {
-    background: #E3B873;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    border-radius: 2px;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    padding: 13px 33px;
-    color: #fff;
+    background    : #e3b873;
+    box-shadow    : 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius : 2px;
+    cursor        : pointer;
+    outline       : 0;
+    border        : 0;
+    padding       : 13px 33px;
+    color         : #fff;
     text-transform: uppercase;
 
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    font-style: italic;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 11px;
+    font-style : italic;
     line-height: 15px;
+}
+
+.big-titles {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 27px;
+    line-height   : 37px;
+    text-transform: uppercase;
+    margin-top    : 46px;
+    margin-bottom : 0px;
+}
+
+.section_titles {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 20px;
+    text-align    : center;
+    text-transform: uppercase;
+    color         : #fff;
+    margin-bottom : 0;
+}
+
+.section_titles__black {
+    color: #181818;
+}
+
+.icons {
+    display        : flex;
+    justify-content: center;
+}
+
+.icons .icon_picture {
+    margin-top: 12.8px;
+}
+
+.icons .line_left {
+    margin-top   : 25.8px;
+    margin-right : 9.5px;
+    margin-bottom: 0;
+    height       : 1.5px;
+    width        : 32px;
+    border-radius: 30px;
+    background   : #e3b873;
+    border       : none;
+}
+
+.icons .line_right {
+    margin-top   : 25.8px;
+    margin-bottom: 0;
+    height       : 1.5px;
+    width        : 32px;
+    border-radius: 30px;
+    background   : #e3b873;
+    border       : none;
+    margin-left  : 7.8px;
 }
 
 .button:hover {
     background: #dfa74d;
     transition: 1s;
+    outline   : 1px solid #fff;
 }
 
 span {
-    color: #E3B873;
+    color: #e3b873;
 }
 
 .header {
+    /* position: fixed;
+    z-index: 2;
+    width: 100%; */
     background-color: black;
-    font-family: 'Nunito Sans',Helvetica, Arial, sans-serif;
-    font-size: 11px;
-    }
+    font-family     : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size       : 11px;
+}
 
 .header .header-content {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    height: 83px;
+    align-items    : center;
+    height         : 83px;
 }
 
 .header .logo a {
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform : uppercase;
 }
 
 .header .reaction:hover {
-    color: #cf8f2f;
+    color     : #cf8f2f;
     transition: 1s;
 }
 
 .header .menu__item a:hover {
-    color: rgb(177, 172, 172);
+    color     : rgb(177, 172, 172);
     transition: 1s;
 }
 
 .header .menu {
     list-style: none;
-    display: flex;
+    display   : flex;
 }
 
 .header .menu__item {
@@ -77,81 +134,931 @@ span {
 
 .header .menu__link {
     text-decoration: none;
-    color: #fff;
+    color          : #fff;
 }
 
 .header .header-call a {
-    padding-right: 45px;
-    font-size: 11px;
-    line-height: 15px;
-    text-align: right;
-    text-decoration-line: underline;
-    text-decoration-color: #E3B873;
+    padding-right        : 45px;
+    font-size            : 11px;
+    line-height          : 15px;
+    text-align           : right;
+    text-decoration-line : underline;
+    text-decoration-color: #e3b873;
 }
 
 .upper {
-    background: url('../img/upper_bg.jpg') center center/cover no-repeat;
-    height: 707px;
+    background : url("../img/upper_bg.jpg") center center/cover no-repeat;
+    height     : 707px;
     padding-top: 194px;
 }
 
 .upper .title {
-    margin: 0;
-    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
-    font-size: 40px;
-    line-height: 53px;
+    margin        : 0;
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 40px;
+    line-height   : 53px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color         : #ffffff;
 }
 
 .upper .subtitle {
-    margin: 0;
-    margin-top: 19px;
+    margin     : 0;
+    margin-top : 19px;
     font-family: Nunito Sans, sans-serif;
-    font-size: 22px;
+    font-size  : 22px;
     line-height: 36px;
-    color: #FFFFFF;
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    color      : #ffffff;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
 }
 
 .upper .button_feedback {
-    padding: 0;
-    margin-top: 41px;
+    padding     : 0;
+    margin-top  : 41px;
     margin-right: 20px;
-    width: 207px;
-    height: 51px;
+    width       : 207px;
+    height      : 51px;
 }
 
 .upper .button_feedback__2 {
-    padding: 0;
+    padding   : 0;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border    : 1px solid #ffffff;
     box-sizing: border-box;
 }
 
 .upper .button_feedback__2:hover {
     background: none;
-    color: rgb(211, 197, 197);
-    border: 1px solid #b8aeae;
+    color     : rgb(211, 197, 197);
+    border    : 1px solid #b8aeae;
     transition: 1s;
 }
 
-@media only screen and (max-width: 1300px) {
+.completed-projects {
+    height          : 1074px;
+    padding-top     : 107px;
+    background-color: #131313;
+}
 
-    .wrapper {
-        width: 100;
+.objects {
+    margin: 0;
+}
+
+.completed-projects .objects {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.completed-projects .objects__example {
+    margin-right  : 60px;
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 14px;
+    line-height   : 19px;
+    text-transform: uppercase;
+    list-style    : none;
+}
+
+.completed-projects .objects__link {
+    color          : rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+.completed-projects .objects__link:hover {
+    color         : #e3b873;
+    border-bottom : 1px solid #e3b873;
+    padding-bottom: 5px;
+    transition    : 0.3s;
+}
+
+.completed-projects .content {
+    display        : flex;
+    justify-content: space-between;
+    flex-wrap      : wrap;
+}
+
+.completed-projects .content .objects-information {
+    height: 0px;
+}
+
+
+
+.completed-projects .content .content_text {
+    margin-top   : 34px;
+    margin-bottom: 0px;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 14px;
+    line-height  : 27px;
+    color        : #ffffff;
+}
+
+.completed-projects .content .objects_img {
+    margin-top: 53px;
+    width     : 679px;
+    height    : 482px;
+}
+
+.completed-projects .data {
+    margin-top: -260px;
+}
+
+.completed-projects .data__1 {
+    width          : 442px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.completed-projects .data__2 {
+    line-height    : 18px;
+    margin-top     : 34px;
+    width          : 442px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.completed-projects .data__1 .title,
+.data__2 .title {
+    margin-top    : 0px;
+    margin-bottom : 0px;
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 18px;
+    text-transform: uppercase;
+    color         : #e3b873;
+}
+
+.completed-projects .data .sub_data {
+    margin-top : 9px;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 13px;
+    line-height: 21px;
+    color      : #ffffff;
+}
+
+.completed-projects .data-cost {
+    margin-right: 50px;
+}
+
+/* Slideshow container */
+.completed-projects .slideshow-container {
+    width   : 679px;
+    height  : 482px;
+    position: relative;
+    margin  : auto;
+}
+
+/* Hide the images by default */
+.completed-projects .slideshow-container .mySlides {
+    display: none;
+}
+
+.completed-projects .slideshow-container .fade__1 {
+    display: block;
+}
+
+.completed-projects .three_circle {
+    position   : relative;
+    margin-left: -501px;
+    margin-top : -33px;
+}
+
+/* The dots/bullets/indicators */
+.completed-projects .three_circle .dot {
+    cursor          : pointer;
+    height          : 9.5px;
+    width           : 9.5px;
+    margin-right    : 17px;
+    background-color: #fff;
+    border-radius   : 100%;
+    display         : inline-block;
+    transition      : background-color 0.6s ease;
+}
+
+.completed-projects .three_circle .dot:hover {
+    background-color: #504e4e;
+}
+
+/* Fading animation */
+.completed-projects .slideshow-container .fade,
+.fade__1 {
+    -webkit-animation-name    : fade;
+    -webkit-animation-duration: 1s;
+    animation-name            : fade;
+    animation-duration        : 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
     }
-    
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.completed-projects .three_circle .arrow-left {
+    margin-left: -60px;
+    transform  : translateY(-31px);
+}
+
+.completed-projects .three_circle .arrow-right {
+    margin-left: 88px;
+    transform  : translateY(-13px);
+}
+
+.control {
+    margin-top: -345px;
+}
+
+.control .video {
+    margin-top: 31px;
+    text-align: center;
+}
+
+.control .delimiter {
+    margin       : 0 auto;
+    margin-top   : 62.5px;
+    height       : 1.5px;
+    width        : 55px;
+    border-radius: 30px;
+    background   : #e3b873;
+    border       : none;
+    border-radius: 30px;
+}
+
+.control .control_information {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 18px;
+    line-height: 37px;
+    text-align : center;
+    color      : #363636;
+}
+
+.control .personal-information {
+    margin-top     : 93.5px;
+    margin-bottom  : 0;
+    display        : flex;
+    justify-content: center;
+    list-style     : none;
+}
+
+.control .personal-information .personal-information__name {
+    margin-right: 58px;
+}
+
+.control .personal-information .personal-information__phone {
+    margin-right: 49px;
+}
+
+.control .personal-information input {
+    border: none;
+}
+
+.control .personal-information input:focus {
+    outline: none;
+}
+
+.control .personal-information .button_submit {
+    width     : 200px;
+    height    : 51px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    font-style: normal;
+    font-size : 13px;
+}
+
+.control .personal-information .title_text {
+    margin       : 0;
+    margin-bottom: 7px;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 13px;
+    color        : rgba(54, 54, 54, 0.5);
+
+}
+
+.control .personal-information .border_bottom {
+    margin-bottom: 0;
+}
+
+.control .first-checkbox {
+    margin-top: 39px;
+    text-align: center;
+}
+
+.control .first-checkbox span {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 14px;
+    line-height: 163.68%;
+    color      : #181818;
+}
+
+.control .first-checkbox .label {
+    cursor: pointer;
+}
+
+.control .first-checkbox .checkbox {
+    display: none;
+}
+
+.control .first-checkbox .fake {
+    display        : inline-flex;
+    width          : 18px;
+    height         : 18px;
+    background     : #E3B873;
+    color          : #fff;
+    justify-content: center;
+}
+
+.control .first-checkbox .fake::before {
+    content   : "\2714";
+    opacity   : 0;
+    transition: .2s;
+}
+
+.control .first-checkbox .checkbox:checked+.fake::before {
+    opacity: 1;
+}
+
+.types-of-repair .repair {
+    margin-top: 148px;
+}
+
+.types-of-repair .pictures-of-repair {
+    display        : flex;
+    justify-content: space-around;
+    margin-top     : 31px;
+}
+
+.types-of-repair .pictures-of-repair img {
+    width : 392px;
+    height: 421px;
+}
+
+.types-of-repair .descr {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.types-of-repair .descr .descr_block {
+    margin-top      : -127px;
+    width           : 330px;
+    height          : 286px;
+    background-color: #fff;
+    box-shadow      : 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.types-of-repair .descr .descr_block__title {
+    margin-top   : 25px;
+    margin-bottom: 0;
+    margin-left  : 31px;
+    font-family  : "Yeseva One", "Times New Roman", Times, serif;
+    font-size    : 18px;
+    color        : #363636;
+}
+
+.types-of-repair .descr .list_of_works {
+    margin-top   : 13px;
+    margin-bottom: 0;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 13px;
+    line-height  : 27px;
+    color        : #959595;
+}
+
+.types-of-repair .cost__1,
+.cost__2,
+.cost__3 {
+    margin-top    : 12px;
+    width         : 228px;
+    height        : 54px;
+    box-shadow    : 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 18px;
+    text-transform: uppercase;
+    color         : #FFFFFF;
+}
+
+.types-of-repair .cost__1 {
+    padding: 17px 21.4px;
+}
+
+.types-of-repair .cost__2 {
+    padding: 17px 18.5px;
+}
+
+.types-of-repair .cost__3 {
+    padding: 17px 16.6px;
+}
+
+.types-of-repair .consultation {
+    position       : relative;
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.types-of-repair .consultation_bg {
+    position   : absolute;
+    margin-top : 152px;
+    margin-left: -103px;
+    width      : 1006px;
+    height     : 645px;
+}
+
+.types-of-repair .consultation .services {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    transform      : translateX(96px);
+    margin-top     : 269.1px;
+    margin-right   : 210.2px;
+    width          : 383px;
+    height         : 474px;
+}
+
+.types-of-repair .consultation .services .services_block {
+    display    : flex;
+    align-items: center;
+}
+
+.types-of-repair .consultation .services .services_block .text {
+    margin     : 0;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 14px;
+    line-height: 19px;
+    color      : #363636;
+}
+
+.types-of-repair .consultation .services .services_block .item {
+    font-family: "Yeseva One", "Times New Roman", Times, serif;
+    font-size  : 18px;
+    text-align : center;
+    color      : #fff;
+}
+
+.types-of-repair .consultation .services .services_block .circle {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    box-sizing     : content-box;
+    width          : 41.8px;
+    height         : 41.8px;
+    background     : #E3B873;
+    border         : 8px solid #FFFFFF;
+    box-shadow     : 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border-radius  : 100%;
+    margin-right   : 7.1px;
+}
+
+.types-of-repair .consultation .request,
+.questions-content {
+    padding   : 28px 49px 27px 49px;
+    background: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    margin-top: 258px;
+    width     : 506px;
+    height    : 509px;
+}
+
+.types-of-repair .consultation .request .request_title {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 18px;
+    line-height: 26px;
+    text-align : center;
+    color      : #fff;
+}
+
+.types-of-repair .consultation .request .personal-information {
+    padding-left: 0;
+    list-style  : none;
+}
+
+.types-of-repair .consultation .request .personal-information .title_text,
+.our-clients .questions-content .personal-information .title_text {
+    margin-top   : 0;
+    margin-bottom: 7px;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 13px;
+    color        : rgba(255, 255, 255, 0.5);
+}
+
+.types-of-repair .consultation .request .personal-information .personal-information__name {
+    margin-top: 39px;
+}
+
+.types-of-repair .consultation .request .personal-information hr,
+.our-clients .questions-content .personal-information hr {
+    margin-bottom   : 0;
+    width           : 408px;
+    height          : 1px;
+    border          : 0;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.types-of-repair .consultation .request .personal-information input::placeholder,
+.our-clients .questions-content .personal-information input::placeholder {
+    background-color: #131313;
+    color           : #fff;
+}
+
+
+.types-of-repair .consultation .request .personal-information input,
+.our-clients .questions-content .personal-information input {
+    outline         : none;
+    border          : none;
+    background-color: #131313;
+
+}
+
+.types-of-repair .consultation .request .personal-information input:focus,
+.our-clients .questions-content .personal-information input:focus {
+    background-color: #131313;
+    color           : #fff;
+}
+
+.types-of-repair .consultation .request .personal-information .personal-information__phone {
+    margin-top: 48px;
+}
+
+.types-of-repair .consultation .request .first-checkbox {
+    margin-top: 17.8px;
+}
+
+.types-of-repair .consultation .request .first-checkbox .text,
+.our-clients .questions-content .first-checkbox .text {
+    color: #fff;
+}
+
+.types-of-repair .consultation .request .button_new {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.types-of-repair .consultation .request .button_measurer {
+    margin-top: 39px;
+    width     : 213px;
+}
+
+.types-of-repair .note-on-cost {
+    display        : flex;
+    justify-content: flex-end;
+    margin-top     : 38.4px;
+    margin-right   : 167px;
+}
+
+.types-of-repair .note-on-cost .note-on-cost__text {
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 18px;
+    line-height: 26px;
+    color      : #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.design-styles {
+    padding   : 0 100px 0 100px;
+    margin-top: 220px;
+    background: url("../img/design-styles_bg.jpg") center center/cover no-repeat;
+    height    : 864px;
+}
+
+.design-styles .design-styles_title {
+    margin     : 0;
+    padding-top: 137.5px;
+}
+
+.design-styles .list-of-design-styles {
+    margin-top   : 47px;
+    margin-bottom: 0;
+    padding      : 0;
+    list-style   : none;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 20px;
+    color        : #fff;
+}
+
+.design-styles .list-of-design-styles .list__items {
+    margin-top: 25px;
+}
+
+.design-styles .list-of-design-styles .list__link {
+    text-decoration: none;
+
+}
+
+.design-styles .list-of-design-styles .list__link:visited {
+    color: #fff;
+}
+
+.design-styles .list-of-design-styles .list__link:hover {
+    color         : #e3b873;
+    border-bottom : 1px solid #e3b873;
+    padding-bottom: 5px;
+    transition    : 0.3s;
+}
+
+.design-styles .all-content {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.design-styles .block-pictures {
+    width         : 354px;
+    display       : flex;
+    flex-direction: column;
+}
+
+.design-styles .block-pictures__1 {
+    margin-top: -41px;
+    transform : translateX(88px);
+}
+
+.design-styles .block-pictures__1 .screen {
+    margin-top: 39px;
+}
+
+.design-styles .block-pictures__2 {
+    margin-top: -112.6px;
+}
+
+.design-styles .block-pictures__2 .flowers {
+    margin-top: 37px;
+}
+
+.our-clients {
+    background   : url("../img/clients_bg.jpg") center;
+    position     : relative;
+    margin-top   : 110.5px;
+    margin-bottom: 354.7px;
+}
+
+.our-clients .subtitle {
+    margin-top : 24.2px;
+    font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size  : 18px;
+    line-height: 29px;
+    text-align : center;
+    color      : #363636;
+}
+
+.our-clients .reviews {
+    margin-top     : 39px;
+    display        : flex;
+    justify-content: space-between;
+}
+
+.our-clients .reviews .reviews-block {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    width     : 376px;
+    height    : 428px;
+}
+
+.our-clients .reviews .reviews-block .client {
+    margin-top : 24px;
+    display    : flex;
+    align-items: center;
+}
+
+.our-clients .reviews .reviews-block .client .client_name {
+    margin     : 0;
+    font-family: "Yeseva One", "Times New Roman", Times, serif;
+    font-size  : 18px;
+    line-height: 23px;
+    color      : #181818;
+}
+
+
+.our-clients .reviews .reviews-block .client .client_photo {
+    padding-left: 20px;
+    margin-right: 23px;
+}
+
+.our-clients .reviews .reviews-block .feedback {
+    padding-left : 20px;
+    margin-top   : 22px;
+    margin-bottom: 0;
+    font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
+    font-size    : 13px;
+    line-height  : 23px;
+    color        : #959595;
+}
+
+.our-clients .reviews .repair-data {
+    display        : flex;
+    justify-content: space-between;
+    margin-top     : 63px;
+    transform      : translateY(15px);
+    width          : 293.8px;
+    height         : 54px;
+    box-shadow     : 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.our-clients .reviews .repair-data .footage {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+    width          : 146.5px;
+    height         : 54px;
+    background     : #E3B873;
+}
+
+.our-clients .reviews .repair-data .footage img {
+    width : 32.3px;
+    height: 31.3px;
+}
+
+.our-clients .reviews .repair-data .footage p {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 17px;
+    text-transform: uppercase;
+    color         : #fff;
+}
+
+.our-clients .reviews .repair-data .timeframe {
+    width     : 146.5px;
+    height    : 54px;
+    background: #E3B873;
+}
+
+.our-clients .reviews .repair-data .timeframe {
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : center;
+    width          : 146.5px;
+    height         : 54px;
+    background     : #E3B873;
+}
+
+.our-clients .reviews .repair-data .timeframe img {
+    width : 32.8px;
+    height: 31.4px;
+}
+
+.our-clients .reviews .repair-data .timeframe p {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 17px;
+    text-transform: uppercase;
+    color         : #fff;
+}
+
+.our-clients .questions-content {
+    position       : absolute;
+    z-index        : 1;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+    padding        : 34.4px 181.5px;
+    margin         : 0 auto;
+    margin-top     : 159px;
+    width          : 883px;
+    height         : 445.3px;
+    background     : #131313;
+    box-shadow     : 0px 30px 30px rgba(0, 0, 0, 0.05);
+}
+
+.our-clients .questions-content .questions_title {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 20px;
+    text-align    : center;
+    text-transform: uppercase;
+    color         : #fff;
+}
+
+.our-clients .questions-content .personal-information {
+    margin         : 0;
+    padding-left   : 0;
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    list-style     : none;
+}
+
+.our-clients .questions-content .personal-information hr {
+    margin    : 0;
+    margin-top: 8px;
+    width     : 231px;
+}
+
+.our-clients .questions-content .personal-information__name,
+.personal-information__phone,
+.personal-information__questions {
+    display       : flex;
+    flex-direction: column;
+}
+
+.our-clients .questions-content .personal-information__questions {
+    margin-top: 48.8px;
+}
+
+.our-clients .questions-contents .personal-information__questions hr {
+    width: 520px;
+}
+
+.our-clients .questions-content .first-checkbox {
+    text-align: center;
+}
+
+.our-clients .questions-content .button_new {
+    display   : block;
+    text-align: center;
+}
+
+.our-clients .questions {
+    display        : flex;
+    justify-content: center;
+}
+
+.contacts {
+    background: url("../img/contacts_bg.jpg") center center/cover no-repeat;
+    height    : 954px;
+    width     : 100;
+}
+
+.contacts .contacts-content {
+    padding-top   : 274.7px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+.contacts .contacts-content .contacts_title {
+    font-family   : "Yeseva One", "Times New Roman", Times, serif;
+    font-size     : 20px;
+    line-height   : 28px;
+    text-align    : center;
+    text-transform: uppercase;
+    color         : #d18616;
+}
+
+.contacts .contacts-content .contacts-social {
+    display        : flex;
+    justify-content: space-between;
+    width          : 71px;
+    margin-top     : 26px;
+}
+
+
+.contacts .contacts-social_items {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    width           : 28px;
+    height          : 28px;
+    border-radius   : 100%;
+    background-color: #E3B873;
+}
+
+.contacts .contacts-social_items span {
+    color: #fff;
+}
+
+.contacts .contacts-social a {
+    text-decoration: none;
+}
+
+
+.contacts .contacts-content iframe {
+    margin-top: 43.3px;
+}
+
+footer .header .footer {
+    height: 133px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    .wrapper {
+        width: 100%;
+    }
+
     .header .header-content {
         height: 57px;
     }
-    
-    .header .menu, .header__button {
+
+    .header .menu,
+    .header__button {
         display: none;
     }
 
     .upper {
-        display: flex;
+        display        : flex;
         justify-content: center;
     }
 
@@ -160,13 +1067,14 @@ span {
     }
 
     .header .header-call a {
-        padding-right: 18px;
+        padding-right  : 18px;
         text-decoration: none;
     }
 
     .header .reaction_mobile {
         color: #fff;
     }
+}
 
 @media only screen and (max-width: 540px) {
     .upper {
@@ -174,20 +1082,18 @@ span {
     }
 
     .upper .title {
-        font-size: 23px;
+        font-size  : 23px;
         line-height: 30px;
     }
 
     .upper .subtitle {
-        font-size: 14px;
+        font-size  : 14px;
         line-height: 19px;
-    }   
-
-    .upper .button_feedback, .button_feedback__2 {
-        width: 338px;
-        margin-left: 18px;
     }
 
-    
+    .upper .button_feedback,
+    .button_feedback__2 {
+        width      : 338px;
+        margin-left: 18px;
+    }
 }
-
