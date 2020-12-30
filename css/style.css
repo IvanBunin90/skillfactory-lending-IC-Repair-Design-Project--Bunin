@@ -418,6 +418,11 @@ span {
     margin-right: 49px;
 }
 
+.control .personal-information .personal-information__phone hr {
+    margin-left: 0;
+    width      : 180px;
+}
+
 .control .personal-information input {
     border: none;
 }
@@ -752,7 +757,7 @@ span {
 }
 
 .design-styles .list-of-design-styles .list__link:visited {
-    color: #fff;
+    color: #e3b873;
 }
 
 .design-styles .list-of-design-styles .list__link:hover {
