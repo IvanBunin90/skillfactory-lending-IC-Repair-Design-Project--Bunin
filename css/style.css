@@ -12,6 +12,14 @@ body * {
     max-width: 1250px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
 .button {
     background    : #e3b873;
     box-shadow    : 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -83,9 +91,10 @@ body * {
 }
 
 .button:hover {
-    background: #dfa74d;
-    transition: 1s;
-    outline   : 1px solid #fff;
+    background         : #dfa74d;
+    outline            : 1px solid #fff;
+    transition-property: border;
+    transition-duration: 1s;
 }
 
 span {
@@ -114,13 +123,13 @@ span {
 }
 
 .header .reaction:hover {
-    color     : #cf8f2f;
-    transition: 1s;
+    color              : #cf8f2f;
+    transition-duration: 1s;
 }
 
 .header .menu__item a:hover {
-    color     : rgb(177, 172, 172);
-    transition: 1s;
+    color              : rgb(177, 172, 172);
+    transition-duration: 1s;
 }
 
 .header .menu {
@@ -187,10 +196,10 @@ span {
 }
 
 .upper .button_feedback__2:hover {
-    background: none;
-    color     : rgb(211, 197, 197);
-    border    : 1px solid #b8aeae;
-    transition: 1s;
+    background         : none;
+    color              : rgb(211, 197, 197);
+    border             : 1px solid #b8aeae;
+    transition-duration: 1s;
 }
 
 .completed-projects {
@@ -209,7 +218,7 @@ span {
 }
 
 .completed-projects .objects__example {
-    margin-right  : 60px;
+    margin-right  : calc(20px + (40 - 20) * ((100vw - 320px) / (1250 - 320)));
     font-family   : "Yeseva One", "Times New Roman", Times, serif;
     font-size     : 14px;
     line-height   : 19px;
@@ -223,10 +232,10 @@ span {
 }
 
 .completed-projects .objects__link:hover {
-    color         : #e3b873;
-    border-bottom : 1px solid #e3b873;
-    padding-bottom: 5px;
-    transition    : 0.3s;
+    color              : #e3b873;
+    border-bottom      : 1px solid #e3b873;
+    padding-bottom     : 5px;
+    transition-duration: 0.3s;
 }
 
 .completed-projects .content {
@@ -292,8 +301,7 @@ span {
 
 /* Slideshow container */
 .completed-projects .slideshow-container {
-    width   : 679px;
-    height  : 482px;
+    width   : 100%;
     position: relative;
     margin  : auto;
 }
@@ -315,14 +323,14 @@ span {
 
 /* The dots/bullets/indicators */
 .completed-projects .three_circle .dot {
-    cursor          : pointer;
-    height          : 9.5px;
-    width           : 9.5px;
-    margin-right    : 17px;
-    background-color: #fff;
-    border-radius   : 100%;
-    display         : inline-block;
-    transition      : background-color 0.6s ease;
+    cursor             : pointer;
+    height             : 9.5px;
+    width              : 9.5px;
+    margin-right       : 17px;
+    background-color   : #fff;
+    border-radius      : 100%;
+    display            : inline-block;
+    transition-duration: background-color 0.6s ease;
 }
 
 .completed-projects .three_circle .dot:hover {
@@ -488,35 +496,36 @@ span {
     opacity: 1;
 }
 
-.types-of-repair .repair {
-    margin-top: 148px;
+.types-of-repair {
+    margin-top: 147.9px;
 }
 
-.types-of-repair .pictures-of-repair {
-    display        : flex;
-    justify-content: space-around;
+.types-of-repair .descr {
     margin-top     : 31px;
+    display        : flex;
+    justify-content: space-between;
 }
 
-.types-of-repair .pictures-of-repair img {
+.types-of-repair .descr .pictures-of-repair {
     width : 392px;
     height: 421px;
 }
 
-.types-of-repair .descr {
-    display        : flex;
-    justify-content: space-around;
+.types-of-repair .descr .descr_block {
+    display       : flex;
+    flex-direction: column;
 }
 
-.types-of-repair .descr .descr_block {
+.types-of-repair .descr .descr_block_info {
     margin-top      : -127px;
+    margin-left     : 31px;
     width           : 330px;
     height          : 286px;
     background-color: #fff;
     box-shadow      : 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
 
-.types-of-repair .descr .descr_block__title {
+.types-of-repair .descr .descr_block_info .descr_block__title {
     margin-top   : 25px;
     margin-bottom: 0;
     margin-left  : 31px;
@@ -525,7 +534,7 @@ span {
     color        : #363636;
 }
 
-.types-of-repair .descr .list_of_works {
+.types-of-repair .descr .descr_block_info .list_of_works {
     margin-top   : 13px;
     margin-bottom: 0;
     font-family  : "Nunito Sans", Helvetica, Arial, sans-serif;
@@ -534,17 +543,19 @@ span {
     color        : #959595;
 }
 
-.types-of-repair .cost__1,
+.types-of-repair .descr .descr_block .cost__1,
 .cost__2,
 .cost__3 {
-    margin-top    : 12px;
-    width         : 228px;
-    height        : 54px;
-    box-shadow    : 5px 5px 10px rgba(227, 184, 115, 0.3);
-    font-family   : "Yeseva One", "Times New Roman", Times, serif;
-    font-size     : 18px;
-    text-transform: uppercase;
-    color         : #FFFFFF;
+    margin-top      : -26px;
+    margin-left     : 31px;
+    width           : 228px;
+    height          : 54px;
+    box-shadow      : 5px 5px 10px rgba(227, 184, 115, 0.3);
+    font-family     : "Yeseva One", "Times New Roman", Times, serif;
+    font-size       : 18px;
+    text-transform  : uppercase;
+    background-color: #E3B873;
+    color           : #FFFFFF;
 }
 
 .types-of-repair .cost__1 {
@@ -675,7 +686,7 @@ span {
     outline         : none;
     border          : none;
     background-color: #131313;
-
+    color           : #fff;
 }
 
 .types-of-repair .consultation .request .personal-information input:focus,
@@ -750,18 +761,14 @@ span {
 
 .design-styles .list-of-design-styles .list__link {
     text-decoration: none;
-
-}
-
-.design-styles .list-of-design-styles .list__link:visited {
-    color: #e3b873;
+    color          : #e3b873;
 }
 
 .design-styles .list-of-design-styles .list__link:hover {
-    color         : #e3b873;
-    border-bottom : 1px solid #e3b873;
-    padding-bottom: 5px;
-    transition    : 0.3s;
+    color              : #e3b873;
+    border-bottom      : 1px solid #e3b873;
+    padding-bottom     : 5px;
+    transition-duration: 0.3s;
 }
 
 .design-styles .all-content {
@@ -910,7 +917,7 @@ span {
 
 .our-clients .questions-content {
     position       : absolute;
-    z-index        : 1;
+    z-index        : 2;
     display        : flex;
     flex-direction : column;
     justify-content: space-between;
@@ -976,9 +983,24 @@ span {
 }
 
 .contacts {
+    position  : relative;
     background: url("../img/contacts_bg.jpg") center center/cover no-repeat;
     height    : 954px;
     width     : 100;
+}
+
+.contacts .background {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    background: url("../img/dark_layer.png") center center/cover no-repeat;
+}
+
+.contacts .wrapper {
+    position: relative;
+    z-index : 1;
 }
 
 .contacts .contacts-content {
@@ -1045,29 +1067,14 @@ footer .header .footer {
 
 
 
-@media only screen and (max-width: 1300px) {
-    .wrapper {
+@media only screen and (max-width: 1345px) {
+    .upper .wrapper {
         max-width: 1250px;
         margin   : 0 auto;
     }
 
     .header .header-content {
         height: 57px;
-    }
-
-
-    .header .menu,
-    .header__button {
-        display: none;
-    }
-
-    .upper {
-        display        : flex;
-        justify-content: center;
-    }
-
-    .upper .wrapper {
-        text-align: center;
     }
 
     .header .logo a {
@@ -1085,161 +1092,350 @@ footer .header .footer {
         color: #fff;
     }
 
+    .header .menu,
+    .header__button {
+        display: none;
+    }
 
+    /* First section */
+    .upper {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .upper .wrapper {
+        text-align: center;
+    }
+
+    /* Second section */
+    .completed-projects {
+        padding-top: calc(36px + (107 - 36) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .wrapper {
+        margin-left : calc(20px + (40 - 20) * ((100vw - 320px) / (1250 - 320)));
+        margin-right: calc(20px + (40 - 20) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .objects-information .big-titles {
+        font-size: calc(20px + (27 - 20) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .content .big-titles {
+        margin-top: calc(7px + (46 - 7) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .content .content_text {
+        font-size : calc(11px + (14 - 11) * ((100vw - 320px) / (1250 - 320)));
+        margin-top: calc(7px + (34 - 7) * ((100vw - 320px) / (1250 - 320)));
+        ;
+    }
+
+    .completed-projects .data {
+        margin-top: calc(10px + (42 - 10) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .data .title {
+        font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .data .sub_data {
+        font-size: calc(11px + (13 - 11) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .data .data-time {
+        margin-top: calc(7px + (34 - 7) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .data .data-cost {
+        margin-top: calc(7px + (34 - 7) * ((100vw - 320px) / (1250 - 320)));
+    }
+
+    .completed-projects .objects {
+        display: none;
+    }
 
     .completed-projects .content .objects_img {
-        width : 80%;
-        height: 80%;
+        width: calc(399px + (679 - 399) * ((100vw - 720px) / (1250 - 320)));
     }
 
+    .completed-projects .three_circle {
+        display: none;
+    }
+}
 
 
 
 
-
-
-
-
-    @media only screen and (max-width: 540px) {
-        .wrapper {
-            margin   : 0 auto;
-            max-width: 340px;
-        }
-
-        .big-titles {
-            text-align: center;
-            margin    : 0;
-            font-size : 22px;
-        }
-
-        .header .logo a {
-            font-size: 11px;
-            padding  : 0;
-        }
-
-        .header .header-call a {
-            font-size: 11px;
-            padding  : 0;
-        }
-
-        .upper {
-            text-align: center;
-        }
-
-        .upper .title {
-            font-size  : 23px;
-            line-height: 30px;
-        }
-
-        .upper .subtitle {
-            font-size  : 14px;
-            line-height: 19px;
-        }
-
-        .upper .button_feedback,
-        .button_feedback__2 {
-            width: 338px;
-        }
-
-        .upper .button .mobile-devel {
-            display: none;
-        }
-
-        .completed-projects {
-            padding: 0;
-        }
-
-        .completed-projects .objects {
-            display: none;
-        }
-
-        .completed-projects .content .big-titles {
-            margin-top: 34px;
-        }
-
-        .completed-projects .content .content_text {
-            margin-top : 22px;
-            line-height: 17px;
-            text-align : center;
-            font-size  : 11px;
-        }
-
-        .completed-projects .content .content_text .content_text__mobile {
-            display: none;
-        }
-
-        .completed-projects .content .content_text .mobile-dev {
-            display: block;
-        }
-
-        .completed-projects .data {
-            margin-top: 340px;
-        }
-
-        .completed-projects .content .objects_img .mySlides {
-            width      : 340px;
-            height     : 241.3px;
-            margin-left: -360px;
-            margin-top : 185px;
-        }
-
-        .completed-projects .three_circle {
-            display: none;
-        }
-
-
-        .control .video iframe {
-            width : 340px;
-            height: 207px;
-        }
-
-        .control .delimiter {
-            margin-top: 48px;
-        }
-
-        .control {
-            background-color: #131313;
-        }
-
-        .control .control_information {
-            margin-top : 21.4px;
-            font-size  : 11px;
-            line-height: 19px;
-            color      : #fff;
-        }
-
-        .control .control_information .desc {
-            display: none;
-        }
-
-        .control .control_information .mobile-dev {
-            display: block;
-        }
-
-        .control .personal-information {
-            margin-top: 61.5px;
-            display   : block;
-        }
-
-        .control .personal-information .title_text {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .control form {
-            height        : 311px;
-            width         : 340px;
-            display       : flex;
-            flex-direction: column;
-        }
-
-        .control .personal-information__phone {
-            margin-top: 63px;
-        }
-
-
+@media only screen and (max-width: 720px) {
+    .completed-projects .content {
+        flex-direction: column;
     }
 
-    /*  @media only screen and (max-width: 370px) {
+}
+
+
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        margin   : 0 auto;
+        max-width: 340px;
+    }
+
+    .big-titles {
+        text-align: center;
+        margin    : 0;
+        font-size : 22px;
+    }
+
+    .header .logo a {
+        font-size: 11px;
+        padding  : 0;
+    }
+
+    .header .header-call a {
+        font-size: 11px;
+        padding  : 0;
+    }
+
+    /* First section */
+    .upper {
+        text-align: center;
+    }
+
+    .upper .title {
+        font-size  : 23px;
+        line-height: 30px;
+    }
+
+    .upper .subtitle {
+        font-size  : 14px;
+        line-height: 19px;
+    }
+
+    .upper .button_feedback,
+    .button_feedback__2 {
+        width: 338px;
+    }
+
+    .upper .button .mobile-devel {
+        display: none;
+    }
+
+    /* Second section */
+    .completed-projects {
+        padding: 0;
+    }
+
+    .completed-projects .objects {
+        display: none;
+    }
+
+    .completed-projects .objects-information {
+        margin-left: 0;
+    }
+
+    .completed-projects .content .big-titles {
+        margin-top: 34px;
+    }
+
+    .completed-projects .content .content_text {
+        margin-top : 22px;
+        line-height: 17px;
+        text-align : center;
+        font-size  : 11px;
+    }
+
+    .completed-projects .content .content_text .content_text__mobile {
+        display: none;
+    }
+
+    .completed-projects .content .content_text .mobile-dev {
+        display: block;
+    }
+
+    .completed-projects .data {
+        margin-top   : 340px;
+        padding-right: 18px;
+    }
+
+    .completed-projects .data .sub_data {
+        font-size: 11px;
+    }
+
+    .completed-projects .content .objects_img .mySlides {
+        width      : 340px;
+        height     : 241.3px;
+        margin-left: -360px;
+        margin-top : 185px;
+    }
+
+    .completed-projects .three_circle {
+        display: none;
+    }
+
+    /* Third section */
+    .control {
+        height: 850px;
+    }
+
+    .control .video iframe {
+        width : 340px;
+        height: 207px;
+    }
+
+    .control .delimiter {
+        margin-top: 48px;
+    }
+
+    .control {
+        background-color: #131313;
+    }
+
+    .control .control_information {
+        margin-top : 21.4px;
+        font-size  : 11px;
+        line-height: 19px;
+        color      : #fff;
+    }
+
+    .control .control_information .desc {
+        display: none;
+    }
+
+    .control .control_information .mobile-dev {
+        display: block;
+    }
+
+    .control .personal-information {
+        padding   : 0;
+        margin-top: 61.5px;
+        display   : block;
+    }
+
+    .control .personal-information input {
+        background-color: #131313;
+    }
+
+    .control .personal-information .title_text {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .control .personal-information .border_bottom {
+        width: 340px;
+    }
+
+    .control form {
+        height        : 311px;
+        width         : 340px;
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .control .personal-information input {
+        color: #fff;
+    }
+
+    .control .personal-information__phone {
+        margin-top: 63px;
+    }
+
+    .control .personal-information .personal-information__phone hr {
+        width: 340px;
+    }
+
+    .control .personal-information .button_submit {
+        margin-top: 117px;
+        width     : 340px;
+    }
+
+    .control .first-checkbox {
+        width    : 286px;
+        margin   : 0;
+        transform: translateY(-141px);
+    }
+
+    .control .first-checkbox span {
+        color: #fff;
+    }
+
+    /* Fourth section */
+    .types-of-repair {
+        margin-top: 83px;
+    }
+
+    .section_titles__black {
+        font-size: 22px;
+    }
+
+    .types-of-repair .descr {
+        flex-direction: column;
+    }
+
+    .types-of-repair .descr .pictures-of-repair {
+        width : 340px;
+        height: 365.2px;
+    }
+
+    .types-of-repair .descr .descr_block_info {
+        margin-left: 0;
+        width      : 270px;
+        height     : 241px;
+    }
+
+    .types-of-repair .descr .descr_block_info .descr_block__title {
+        font-size: 15px;
+    }
+
+    .types-of-repair .descr .descr_block_info .list_of_works {
+        line-height: 22px;
+    }
+
+    .types-of-repair .descr .descr_block .cost__1,
+    .cost__2,
+    .cost__3 {
+        margin-top     : -19px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        margin-left    : 0;
+        width          : 190.4px;
+        height         : 40px;
+        font-size      : 14px;
+    }
+
+    .types-of-repair .descr .overhaul,
+    .types-of-repair .descr .designer-repair {
+        margin-top: 59px;
+    }
+
+    .types-of-repair .our_services {
+        display: none;
+    }
+
+    /* Fifth section */
+
+
+    /* Sixth section */
+    .our-clients .section_titles {
+        display: none;
+    }
+
+    .our-clients .icons {
+        display: none;
+    }
+
+    .our-clients .subtitle {
+        display: none;
+    }
+
+    .our-clients .reviews {
+        display: none;
+    }
+
+}
+
+/*  @media only screen and (max-width: 370px) {
 
         .wrapper {
             margin   : 0 auto;
