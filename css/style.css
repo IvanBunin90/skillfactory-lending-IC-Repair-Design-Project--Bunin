@@ -1109,7 +1109,7 @@ footer .header .footer {
 
     /* Second section */
     .completed-projects {
-        padding-top: calc(36px + (107 - 36) * ((100vw - 320px) / (1250 - 320)));
+        padding-top: calc(80px + (107 - 80) * ((100vw - 320px) / (1250 - 320)));
     }
 
     .completed-projects .wrapper {
@@ -1167,19 +1167,45 @@ footer .header .footer {
 
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
     .completed-projects .content {
+        margin-top    : -80px;
         flex-direction: column;
     }
 
-}
+    .completed-projects .content .big-titles {
+        text-align: center;
+    }
 
+    .completed-projects .content .content_text {
+        text-align: center;
+    }
+
+    .completed-projects .data {
+        margin   : 0 auto;
+        transform: translateY(315px);
+    }
+
+    .completed-projects .data-apartment {
+        transform: translateX(100px);
+    }
+
+    .completed-projects .data-time {
+        transform: translate(-60px, 68px);
+    }
+
+    .completed-projects .content .objects_img {
+        margin     : 0 auto;
+        transform  : translateY(-140px);
+        padding-top: calc(30px + (0 - 30) * ((100vw - 540px) / (1250 - 540)));
+        max-width  : 360px;
+    }
+}
 
 
 @media only screen and (max-width: 540px) {
     .wrapper {
-        margin   : 0 auto;
-        max-width: 340px;
+        margin: 0 auto;
     }
 
     .big-titles {
@@ -1190,12 +1216,10 @@ footer .header .footer {
 
     .header .logo a {
         font-size: 11px;
-        padding  : 0;
     }
 
     .header .header-call a {
         font-size: 11px;
-        padding  : 0;
     }
 
     /* First section */
@@ -1215,7 +1239,8 @@ footer .header .footer {
 
     .upper .button_feedback,
     .button_feedback__2 {
-        width: 338px;
+        width       : 338px;
+        margin-right: 0;
     }
 
     .upper .button .mobile-devel {
@@ -1231,43 +1256,24 @@ footer .header .footer {
         display: none;
     }
 
-    .completed-projects .objects-information {
-        margin-left: 0;
-    }
-
     .completed-projects .content .big-titles {
         margin-top: 34px;
-    }
-
-    .completed-projects .content .content_text {
-        margin-top : 22px;
-        line-height: 17px;
-        text-align : center;
-        font-size  : 11px;
     }
 
     .completed-projects .content .content_text .content_text__mobile {
         display: none;
     }
 
-    .completed-projects .content .content_text .mobile-dev {
-        display: block;
+    .completed-projects .data {
+        width: 340px;
     }
 
-    .completed-projects .data {
-        margin-top   : 340px;
-        padding-right: 18px;
+    .completed-projects .data-time {
+        transform: translate(-52px, 68px);
     }
 
     .completed-projects .data .sub_data {
         font-size: 11px;
-    }
-
-    .completed-projects .content .objects_img .mySlides {
-        width      : 340px;
-        height     : 241.3px;
-        margin-left: -360px;
-        margin-top : 185px;
     }
 
     .completed-projects .three_circle {
@@ -1326,6 +1332,7 @@ footer .header .footer {
     }
 
     .control form {
+        margin        : 0 auto;
         height        : 311px;
         width         : 340px;
         display       : flex;
@@ -1435,63 +1442,75 @@ footer .header .footer {
 
 }
 
-/*  @media only screen and (max-width: 370px) {
+@media only screen and (max-width: 370px) and (min-width: 319px) {
+    .wrapper {
+        margin: 0 auto;
+    }
 
-        .wrapper {
-            margin   : 0 auto;
-            max-width: 290px;
-        }
+    .big-titles {
+        font-size: 20px;
+    }
 
-        .big-titles {
-            font-size: 20px;
-        }
+    .header .logo a {
+        padding-left: 0;
+        font-size   : 9px;
+    }
 
-        .header .logo a {
-            font-size: 9px;
+    .header .header-call a {
+        padding-right: 0;
+        font-size    : 9px;
+    }
 
-        }
+    /* First section */
+    .header .header-content {
+        width: 280px;
+    }
 
-        .header .header-call a {
-            font-size: 9px;
-        }
+    .upper .button {
+        width: 290px;
+    }
 
-        .upper .button {
-            width: 290px;
-        }
+    .upper .title {
+        font-size: 21px;
+    }
 
-        .upper .title {
-            font-size: 21px;
-        }
+    .upper .subtitle {
+        font-size: 12px;
+    }
 
-        .upper .subtitle {
-            font-size: 12px;
-        }
+    /* Second section */
+    .completed-projects .content .content_text {
+        font-size: 10px;
+    }
+
+    .completed-projects .data .title {
+        font-size: 12px;
+    }
+
+    .completed-projects .data .sub_data {
+        font-size: 10px;
+    }
+
+    .completed-projects .slideshow-container {
+        margin-top: 30px;
+        width     : 280px;
+    }
+
+    .completed-projects .data {
+        transform: translate(10px, 315px);
+    }
+
+    .completed-projects .data-apartment {
+        transform: translateX(40px);
+    }
+
+    .completed-projects .data-time {
+        transform: translate(-115px, 68px);
+    }
+
+    .completed-projects .three_circle {
+        display: none;
+    }
 
 
-        .completed-projects .data {
-            margin-left: -18px;
-        }
-
-        .completed-projects .data__1 .title,
-        .data__2 .title {
-            font-size: 12px;
-        }
-
-        .completed-projects .data-cost {
-            transform: none;
-        }
-
-        .completed-projects .data .sub_data {
-            font-size: 9px;
-        }
-
-        .completed-projects .slideshow-container {
-            width: 290px;
-        }
-
-        .completed-projects .three_circle {
-            display: none;
-        }
-
-
-    } */
+}
