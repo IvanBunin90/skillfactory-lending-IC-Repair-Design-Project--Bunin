@@ -380,9 +380,26 @@ span {
     margin-top: -345px;
 }
 
+.control .video iframe {
+    width   : 100%;
+    height  : 100%;
+    position: relative;
+}
+
 .control .video {
-    margin-top: 31px;
-    text-align: center;
+    position           : relative;
+    display            : flex;
+    padding            : 0;
+    margin             : 0 auto;
+    width              : calc(290px + (817 - 290) * ((100vw - 320px) / (1250 - 320)));
+    max-width          : 817px;
+    height             : calc(240px + (434 - 240) * ((100vw - 320px) / (1250 - 320)));
+    max-height         : 434px;
+    margin-top         : 31px;
+    text-align         : center;
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
 }
 
 .control .delimiter {
@@ -497,7 +514,7 @@ span {
 }
 
 .types-of-repair {
-    margin-top: 147.9px;
+    margin-top: calc(78px + (148 - 78) * ((100vw - 320px) / (1345 - 320)));
 }
 
 .types-of-repair .descr {
@@ -1168,6 +1185,8 @@ footer .header .footer {
 
 
 @media only screen and (max-width: 960px) {
+
+    /* Second section */
     .completed-projects .content {
         margin-top    : -80px;
         flex-direction: column;
@@ -1200,6 +1219,35 @@ footer .header .footer {
         padding-top: calc(30px + (0 - 30) * ((100vw - 540px) / (1250 - 540)));
         max-width  : 360px;
     }
+
+    /* Third section */
+    .control .control_information {
+        font-size  : calc(12.5px + (18 - 12.5) * ((100vw - 540px) / (960 - 540)));
+        line-height: calc(27px + (37 - 27) * ((100vw - 540px) / (960 - 540)));
+    }
+
+    .control .personal-information {
+        padding-left: 0;
+    }
+
+    .control .personal-information .button_submit {
+        padding  : 0;
+        width    : calc(80px + (200 - 80) * ((100vw - 540px) / (960 - 540)));
+        font-size: calc(11px + (13 - 11) * ((100vw - 540px) / (960 - 540)));
+        ;
+    }
+
+    .control .personal-information .personal-information__phone {
+        margin-right: calc(3px + (49 - 3) * ((100vw - 540px) / (960 - 540)));
+    }
+
+    .control .personal-information .personal-information__name {
+        margin-right: calc(17px + (58 - 17) * ((100vw - 540px) / (960 - 540)));
+    }
+
+    /* Fourth section */
+
+
 }
 
 
@@ -1281,15 +1329,6 @@ footer .header .footer {
     }
 
     /* Third section */
-    .control {
-        height: 850px;
-    }
-
-    .control .video iframe {
-        width : 340px;
-        height: 207px;
-    }
-
     .control .delimiter {
         margin-top: 48px;
     }
@@ -1315,7 +1354,7 @@ footer .header .footer {
 
     .control .personal-information {
         padding   : 0;
-        margin-top: 61.5px;
+        margin-top: 40px;
         display   : block;
     }
 
@@ -1352,6 +1391,7 @@ footer .header .footer {
     }
 
     .control .personal-information .button_submit {
+        transform : translateY(-45px);
         margin-top: 117px;
         width     : 340px;
     }
@@ -1368,7 +1408,7 @@ footer .header .footer {
 
     /* Fourth section */
     .types-of-repair {
-        margin-top: 83px;
+        margin-top: 180px;
     }
 
     .section_titles__black {
@@ -1510,6 +1550,31 @@ footer .header .footer {
 
     .completed-projects .three_circle {
         display: none;
+    }
+
+    /* Third section */
+    .wrapper {
+        width: 290px;
+    }
+
+    .control .control_information {
+        font-size  : 9.5px;
+        line-height: 21px;
+    }
+
+    .control .personal-information .border_bottom {
+        width : 290px;
+        margin: 0;
+    }
+
+    .control .personal-information .personal-information__phone hr {
+        width : 290px;
+        margin: 0;
+    }
+
+    .control .personal-information .button_submit {
+        width    : 290px;
+        transform: translateY(-30px);
     }
 
 
