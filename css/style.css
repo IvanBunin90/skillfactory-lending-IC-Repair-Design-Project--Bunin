@@ -524,8 +524,8 @@ span {
 }
 
 .types-of-repair .descr .pictures-of-repair {
-    width : 392px;
-    height: 421px;
+    max-width : 392px;
+    max-height: 421px;
 }
 
 .types-of-repair .descr .descr_block {
@@ -536,8 +536,8 @@ span {
 .types-of-repair .descr .descr_block_info {
     margin-top      : -127px;
     margin-left     : 31px;
-    width           : 330px;
-    height          : 286px;
+    max-width       : 330px;
+    max-height      : 286px;
     background-color: #fff;
     box-shadow      : 10px 10px 20px rgba(0, 0, 0, 0.03);
 }
@@ -1179,12 +1179,116 @@ footer .header .footer {
     .completed-projects .three_circle {
         display: none;
     }
+
+    /* Fourth section */
+    .types-of-repair .descr {
+        padding: 0 15px 0 15px;
+    }
+
+    .types-of-repair .descr .pictures-of-repair {
+        width : calc(240px + (392 - 240) * ((100vw - 780px) / (1345 - 780)));
+        height: calc(265px + (421 - 265) * ((100vw - 780px) / (1345 - 780)));
+    }
+
+    .types-of-repair .descr .descr_block_info {
+        margin-left: calc(15px + (31 - 15) * ((100vw - 780px) / (1345 - 780)));
+        width      : calc(210px + (330 - 210) * ((100vw - 780px) / (1345 - 780)));
+    }
+
+    .types-of-repair .descr .descr_block_info .descr_block__title {
+        font-size: calc(16px + (18 - 16) * ((100vw - 780px) / (1345 - 780)));
+    }
+
+    .types-of-repair .descr .descr_block .cost__1,
+    .cost__2,
+    .cost__3 {
+        margin-top: 0;
+        font-size : calc(12px + (18 - 12) * ((100vw - 780px) / (1345 - 780)));
+        width     : calc(180px + (228 - 180) * ((100vw - 780px) / (1345 - 780)));
+        ;
+    }
+
+    .types-of-repair .descr .descr_block_info .list_of_works {
+        font-size   : calc(11.5px + (13 - 11.5) * ((100vw - 780px) / (1345 - 780)));
+        padding-left: calc(30px + (40 - 30) * ((100vw - 780px) / (1345 - 780)));
+    }
+
+
+}
+
+
+@media only screen and (max-width: 780px) and (min-width: 539px) {
+
+    /* Fourth section */
+    .types-of-repair {
+        margin-top: 180px;
+    }
+
+    .section_titles__black {
+        font-size: 22px;
+    }
+
+    .types-of-repair .descr {
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .types-of-repair .descr .pictures-of-repair {
+        width : 340px;
+        height: 365.2px;
+    }
+
+    .types-of-repair .descr .descr_block_info {
+        margin-left: 0;
+        width      : 270px;
+        height     : 241px;
+    }
+
+    .types-of-repair .descr .descr_block_info .descr_block__title {
+        font-size: 15px;
+    }
+
+    .types-of-repair .descr .descr_block_info .list_of_works {
+        line-height: 22px;
+    }
+
+    .types-of-repair .descr .descr_block .cost__1,
+    .cost__2,
+    .cost__3 {
+        margin-top     : -19px;
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+        margin-left    : 0;
+        width          : 190.4px;
+        height         : 40px;
+        font-size      : 14px;
+    }
+
+    .types-of-repair .descr .overhaul,
+    .types-of-repair .descr .designer-repair {
+        margin-top: 59px;
+    }
+
+    .types-of-repair .our_services {
+        display: none;
+    }
+
 }
 
 
 
 
 @media only screen and (max-width: 960px) {
+
+    /* First section */
+    .upper .title {
+        font-size: 36px;
+    }
+
+    .upper .subtitle {
+        font-size: 20px;
+    }
 
     /* Second section */
     .completed-projects .content {
@@ -1417,6 +1521,7 @@ footer .header .footer {
 
     .types-of-repair .descr {
         flex-direction: column;
+        align-items   : center;
     }
 
     .types-of-repair .descr .pictures-of-repair {
@@ -1575,6 +1680,21 @@ footer .header .footer {
     .control .personal-information .button_submit {
         width    : 290px;
         transform: translateY(-30px);
+    }
+
+    /* Fourth section */
+    .types-of-repair .descr {
+        padding: 0;
+    }
+
+    .types-of-repair .descr .pictures-of-repair {
+        width : 100% !important;
+        height: 320.2px !important;
+    }
+
+    .types-of-repair .descr .descr_block_info {
+        width: 80%;
+
     }
 
 
